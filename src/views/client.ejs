@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <%- include ('partials/header_basico') %>
+</head>
+<body>
+  <h1>Cliente</h1>
+
+  <%- include ('partials/nav') %>
+
+  <div id="cliente">
+    <% if(cliente[0]) { %>
+      <%= cliente[0].nombre %><br>
+      <%= cliente[0].email %>
+    <% } %>
+  </div>
+</body>
+</html>
